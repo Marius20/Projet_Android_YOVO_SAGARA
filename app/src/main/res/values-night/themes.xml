@@ -1,0 +1,21 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+
+    <style name="NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+<!--    <style name="Theme.Annuaire" parent="Theme.AppCompat.Light.DarkActionBar">-->
+<!--        &lt;!&ndash; Primary brand color. &ndash;&gt;-->
+<!--        <item name="colorPrimary">@color/couleur_noire</item>-->
+<!--        <item name="colorPrimaryVariant">@color/couleur_bleue</item>-->
+<!--        <item name="colorOnPrimary">@color/couleur_noire</item>-->
+<!--        &lt;!&ndash; Secondary brand color. &ndash;&gt;-->
+<!--        <item name="colorSecondary">@color/couleur_bleue</item>-->
+<!--        <item name="colorSecondaryVariant">@color/couleur_bleue</item>-->
+<!--        <item name="colorOnSecondary">@color/couleur_noire</item>-->
+<!--        &lt;!&ndash; Status bar color. &ndash;&gt;-->
+<!--        <item name="android:statusBarColor" tools:targetApi="l">?attr/colorPrimaryVariant</item>-->
+<!--        &lt;!&ndash; Customize your theme here. &ndash;&gt;-->
+<!--    </style>-->
+</resources>

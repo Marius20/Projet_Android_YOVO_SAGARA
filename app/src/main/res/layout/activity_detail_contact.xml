@@ -1,0 +1,229 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.swiperefreshlayout.widget.SwipeRefreshLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/swipe_refresh_layout_mon_compte"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/couleur_background">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <include layout="@layout/custom_toolbar_detail_contact"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="250dp">
+
+                <ImageView
+                    android:id="@+id/photoCover"
+                    android:scaleType="centerCrop"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/ic_baseline_person_24"/>
+
+            </LinearLayout>
+
+            <RelativeLayout
+                android:visibility="gone"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="-20dp"
+                android:layout_width="match_parent"
+                android:layout_height="50dp">
+
+                <ImageView
+                    android:id="@id/photo"
+                    android:layout_marginLeft="20dp"
+                    android:scaleType="centerCrop"
+                    android:layout_width="50dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_height="50dp"
+                    android:src="@drawable/ic_camera"/>
+
+            </RelativeLayout>
+
+            <LinearLayout
+                android:background="@color/couleur_background"
+                android:layout_marginLeft="10dp"
+                android:layout_marginBottom="30dp"
+                android:layout_marginRight="10dp"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+
+                    <TextView
+                        android:id="@+id/tv_nom_prenom"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginRight="20dp"
+                        android:hint="@string/prenom"
+                        android:imeOptions="actionNext"
+                        android:inputType="text"
+                        android:textSize="22dp"
+                        android:fontFamily="@font/exo_regular"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"/>
+
+
+
+                    <View
+                        android:layout_marginTop="10dp"
+                        android:layout_width="match_parent"
+                        android:background="#676666"
+                        android:layout_height="1dp"/>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:layout_weight="1"
+                            android:text="@string/call"
+                            android:layout_marginTop="5dp"
+                            android:layout_marginLeft="20dp"
+                            android:layout_marginRight="20dp"
+                            android:gravity="center_horizontal"
+                            android:id="@+id/call"
+                            android:drawableTop="@drawable/ic_baseline_phone_24"
+                            android:fontFamily="@font/exo_regular"
+                            android:layout_width="100dp"
+                            android:layout_height="wrap_content"/>
+
+
+
+                        <TextView
+                            android:layout_weight="1"
+                            android:id="@+id/tv_sms"
+                            android:text="@string/sms"
+                            android:layout_marginTop="5dp"
+                            android:layout_marginLeft="20dp"
+                            android:layout_marginRight="20dp"
+                            android:gravity="center_horizontal"
+                            android:drawableTop="@drawable/ic_baseline_textsms_24"
+                            android:fontFamily="@font/exo_regular"
+                            android:layout_width="100dp"
+                            android:layout_height="wrap_content"/>
+
+                    </LinearLayout>
+
+
+                <View
+                    android:layout_marginTop="5dp"
+                    android:layout_width="match_parent"
+                    android:background="#676666"
+                    android:layout_height="1dp"/>
+                
+                
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="35dp">
+                    
+                    <ImageView
+                        android:id="@+id/image_phone"
+                        android:layout_centerVertical="true"
+                        android:src="@drawable/ic_baseline_phone_24"
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"/>
+
+                    <LinearLayout
+                        android:layout_marginLeft="10dp"
+                        android:layout_toRightOf="@id/image_phone"
+                        android:orientation="vertical"
+                        android:layout_centerVertical="true"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:id="@+id/tv_telephone_contact"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text=" +228 90 22 44 88"/>
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text=" Mobile"/>
+
+                    </LinearLayout>
+
+
+                    <ImageView
+                        android:layout_toLeftOf="@id/image_sms"
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:orientation="vertical"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="2dp"
+                        android:id="@+id/image_whatsapp"
+                        android:gravity="center"
+                        android:foreground="?android:attr/selectableItemBackground"
+                        android:focusable="true"
+                        android:clickable="true"
+                        android:src="@drawable/icon_whatsapp"/>
+
+
+                    <ImageView
+                        android:layout_marginLeft="10dp"
+                        android:layout_width="40dp"
+                        android:layout_height="50dp"
+                        android:layout_alignParentEnd="true"
+                        android:orientation="vertical"
+                        android:padding="5dp"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="2dp"
+                        android:id="@+id/image_sms"
+                        android:gravity="center"
+                        android:foreground="?android:attr/selectableItemBackground"
+                        android:focusable="true"
+                        android:clickable="true"
+                        android:src="@drawable/ic_baseline_textsms_24"
+                        android:layout_alignParentRight="true">
+
+                    </ImageView>
+
+                </RelativeLayout>
+
+
+                <View
+                    android:layout_marginTop="5dp"
+                    android:layout_width="match_parent"
+                    android:background="#676666"
+                    android:layout_height="1dp"/>
+                <TextView
+                    android:id="@+id/tv_email"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:imeOptions="actionNext"
+                    android:inputType="text"
+                    android:textSize="22dp"
+                    android:fontFamily="@font/exo_regular"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
+
+                <TextView
+                    android:id="@+id/tv_adresse"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:imeOptions="actionNext"
+                    android:inputType="text"
+                    android:textSize="22dp"
+                    android:fontFamily="@font/exo_regular"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
+
+
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+
+</androidx.swiperefreshlayout.widget.SwipeRefreshLayout>

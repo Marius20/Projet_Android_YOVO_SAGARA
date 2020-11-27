@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.Toolbar
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="55dp"
+    android:background="@color/couleur_app_bar"
+    >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="start">
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:layout_centerVertical="true"
+            android:orientation="horizontal">
+
+
+            <ImageView
+                android:id="@+id/back_menu_principal"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:foregroundGravity="left"
+                android:gravity="center"
+                android:src="@drawable/ic_baseline_arrow_back_ios_white_24" />
+
+
+        </LinearLayout>
+
+        <ImageView
+            android:layout_toLeftOf="@id/supprimer_contact"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="5dp"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="2dp"
+            android:id="@+id/favoris_contact"
+            android:gravity="center"
+            android:foreground="?android:attr/selectableItemBackground"
+            android:focusable="true"
+            android:clickable="true"
+            android:src="@drawable/ic_baseline_star_border_white_24"/>
+
+        <ImageView
+            android:layout_marginLeft="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:orientation="vertical"
+            android:padding="5dp"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="2dp"
+            android:id="@+id/supprimer_contact"
+            android:gravity="center"
+            android:foreground="?android:attr/selectableItemBackground"
+            android:focusable="true"
+            android:clickable="true"
+            android:src="@drawable/ic_baseline_delete_forever_white_24"
+            android:layout_alignParentRight="true">
+
+        </ImageView>
+
+
+    </RelativeLayout>
+
+</androidx.appcompat.widget.Toolbar>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="purple_500">#FF6200EE</color>
+    <color name="couleur_bleue">#FF3700B3</color>
+    <color name="colorAccent">#53514E</color>
+    <color name="couleur_background">#DEE1E1</color>
+    <color name="couleur_noire">#FF000000</color>
+    <color name="couleur_blanche">#FFFFFFFF</color>
+    <color name="couleur_status_bar">#006CCB</color>
+    <color name="couleur_app_bar">#0099FF</color>
+
+</resources>

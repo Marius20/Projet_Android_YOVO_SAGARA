@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    android:id="@+id/layout_contact"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:orientation="horizontal"
+    android:layout_marginLeft="10dp"
+    android:layout_marginRight="10dp"
+    android:layout_height="60dp">
+
+    <LinearLayout
+        android:layout_marginRight="10dp"
+        android:id="@+id/linear_photo"
+        android:layout_width="50dp"
+        android:gravity="center_vertical"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/photo"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@drawable/a"/>
+
+
+    </LinearLayout>
+
+    <TextView
+        android:visibility="gone"
+        android:layout_toRightOf="@id/linear_photo"
+        android:layout_marginTop="5dp"
+        android:id="@+id/tv_id_contact"
+        android:layout_gravity="center_vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/couleur_noire"
+        android:textSize="17dp"
+        android:text="contact"/>
+
+    <TextView
+        android:visibility="gone"
+        android:layout_toRightOf="@id/linear_photo"
+        android:layout_marginTop="5dp"
+        android:id="@+id/tv_adresse_photo"
+        android:layout_gravity="center_vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/couleur_noire"
+        android:textSize="17dp"
+        android:text="contact"/>
+
+    <TextView
+        android:visibility="gone"
+        android:layout_toRightOf="@id/linear_photo"
+        android:layout_marginTop="5dp"
+        android:id="@+id/tv_favoris"
+        android:layout_gravity="center_vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/couleur_noire"
+        android:textSize="17dp"
+        android:text="contact"/>
+
+    <TextView
+        android:visibility="gone"
+        android:layout_toRightOf="@id/linear_photo"
+        android:layout_marginTop="5dp"
+        android:id="@+id/tv_email"
+        android:layout_gravity="center_vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/couleur_noire"
+        android:textSize="17dp"
+        android:text="contact"/>
+
+    <TextView
+        android:visibility="gone"
+        android:layout_toRightOf="@id/linear_photo"
+        android:layout_marginTop="5dp"
+        android:id="@+id/tv_adresse"
+        android:layout_gravity="center_vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/couleur_noire"
+        android:textSize="17dp"
+        android:text="contact"/>
+
+    <TextView
+        android:visibility="gone"
+        android:layout_toRightOf="@id/linear_photo"
+        android:layout_marginTop="5dp"
+        android:id="@+id/tv_telephone"
+        android:layout_gravity="center_vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/couleur_noire"
+        android:textSize="17dp"
+        android:text="contact"/>
+
+    <TextView
+        android:layout_toRightOf="@id/linear_photo"
+        android:layout_marginTop="5dp"
+        android:id="@+id/tv_nom_prenom_contact"
+        android:gravity="center_vertical"
+        android:layout_gravity="center_vertical"
+        android:layout_width="match_parent"
+        android:layout_centerInParent="true"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/exo_light"
+        android:textColor="@color/couleur_noire"
+        android:textSize="25dp"
+        android:text="contact"/>
+
+
+</RelativeLayout>
